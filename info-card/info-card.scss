@@ -1,0 +1,80 @@
+.info-card {
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(184, 0, 95, 0.2);
+    border-radius: 9px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__img {
+        min-width: 100%;
+        border-radius: 9px;
+        box-shadow: 0px 0px 40px rgba(184, 0, 95, 0.2);
+        object-fit: cover;
+        display: flex;
+
+        @media screen and (max-width:1440px) {
+            max-height: 50%;
+        }
+
+        @media screen and (max-width:768px) {
+            max-height: 40%;
+
+        }
+
+    }
+
+    &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+
+        color: #000;
+        min-width: 85%;
+        display: flex;
+        align-items: center;
+
+
+
+    }
+
+    &__text-area {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        min-height: 200px;
+
+        @media screen and (max-width:1440px) {
+            min-height: 50%;
+        }
+
+        @media screen and (max-width:768px) {
+            min-height: 60%;
+
+        }
+    }
+
+    &__text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #767676;
+        max-width: 85%;
+    }
+
+    @media screen and (max-width:1440px) {
+        max-height: 325px;
+        max-width: 594px;
+    }
+
+    @media screen and (max-width:768px) {
+        max-width: 284px;
+        max-height: 362px;
+
+    }
+}

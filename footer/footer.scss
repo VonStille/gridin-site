@@ -1,0 +1,109 @@
+.footer {
+    background: url(img/footer_background.svg);
+    height: 383px;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    ;
+
+
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        min-width: 100%;
+
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+            align-items: unset;
+            justify-content: unset;
+            gap: 20px;
+            padding-top: 30px;
+        }
+
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        min-height: 100%;
+
+        @media screen and (max-width:768px) {
+            align-items: unset;
+        }
+    }
+
+    &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000;
+    }
+
+
+
+    &__column {
+
+        display: flex;
+        flex-direction: column;
+        max-width: 224px;
+        gap: 10px;
+
+        @media screen and (max-width:768px) {
+            align-items: center;
+            max-width: unset;
+        }
+    }
+
+
+    &__img {
+        max-width: 33px;
+        max-height: 33px;
+
+        &:hover {
+            border-radius: 70%;
+            box-shadow: inset 0 0 10px;
+        }
+    }
+
+    &__text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000;
+
+        @media screen and (max-width:768px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__phone {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 10px;
+        color: #000;
+
+        &:hover {
+
+            -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+        }
+    }
+
+    &__inst {
+        width: fit-content;
+    }
+
+    @media screen and (max-width:1440px) {
+        height: 280px;
+    }
+
+
+    @media screen and (max-width:768px) {}
+}

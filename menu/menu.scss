@@ -1,0 +1,40 @@
+.menu {
+    display: flex;
+    min-height: 65px;
+
+    @media screen and (max-width:1440px) {
+        display: none;
+    }
+
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        align-items: center;
+        transition: all 0.3s ease .15s;
+
+
+
+    }
+
+    &__link {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #737373;
+
+        &:hover {
+            color: rgb(242, 9, 160);
+            transition: all 0.3s ease .15s;
+        }
+
+    }
+
+    @media screen and (max-width:768px) {
+        display: none;
+    }
+}

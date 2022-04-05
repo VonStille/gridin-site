@@ -1,0 +1,29 @@
+.brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brand__name {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .brand__name {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+  }
+}
+/*# sourceMappingURL=brand.css.map */

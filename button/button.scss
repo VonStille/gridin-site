@@ -1,0 +1,28 @@
+.button {
+    background: linear-gradient(95.2deg, #B90160 2.23%, #2E3192 99.51%);
+    border-radius: 7px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    display: flex;
+    color: #FFF;
+    max-width: 27%;
+    transition: all .3s ease .3s;
+    justify-content: center;
+
+    &:hover {
+        //background: linear-gradient(180deg, #B90160 0%, #3D5BF5 100%);
+        background: linear-gradient(95.2deg, #94004d 2.23%, #1c1f5f 99.51%);
+        box-shadow: inset 0 0 0 2px #94004d;
+        transition: all .3s ease .3s;
+
+    }
+
+    @media screen and (max-width:1440px) {
+        max-width: 141px;
+        max-height: 42px;
+    }
+}

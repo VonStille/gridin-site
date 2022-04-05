@@ -1,0 +1,216 @@
+.header {
+    max-height: 1045px;
+
+    @media screen and (max-width:1440px) {
+        max-height: 700px;
+    }
+
+
+
+    &__inner {
+        background: linear-gradient(269.91deg, rgba(46, 49, 146, 0.7) 0%, rgba(212, 20, 90, 0.7) 98.16%);
+        min-height: 77px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 77px;
+
+        @media screen and (max-width:1440px) {
+            min-height: 79px;
+            ;
+        }
+
+        @media screen and (max-width:768px) {
+            min-height: 100px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+    }
+
+    &__link-area {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+
+        @media screen and (max-width:768px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__link {
+        transition: .3s ease .15s;
+
+        &:hover {
+
+            transform: scale(1.1);
+            transition: .3s ease .15s;
+        }
+
+        &_type_phone {
+            @media screen and (max-width:1440px) {
+                display: none;
+            }
+
+            @media screen and (max-width:768px) {
+                display: flex
+            }
+        }
+
+        &_type_contacts {
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+        }
+    }
+
+    &__phone {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 16px;
+
+        color: #FFF;
+
+        &-logo {
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+
+        }
+    }
+
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        min-height: 107px;
+        align-items: flex-end;
+
+        @media screen and (max-width:768px) {
+            min-width: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        // @media screen and (max-width:1440px) {
+        //     min-height: 60px;
+        // }
+    }
+
+
+
+    &__content {
+        background: url(img/header-background.svg);
+        display: flex;
+        justify-content: space-between;
+        max-height: 700px;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: 10%;
+    }
+
+
+
+    &__img {
+
+        min-width: 45%;
+        display: flex;
+
+        @media screen and (max-width:1440px) {
+            max-width: 368px;
+
+            max-height: 473px;
+            object-fit: cover;
+            margin-right: 10px;
+
+        }
+
+        @media screen and (max-width:768px) {
+            display: none;
+        }
+
+        &-img {
+            @media screen and (max-width:1440px) {
+                max-width: 368px;
+                min-width: 0%;
+                max-height: 473px;
+                object-fit: cover;
+                display: flex;
+            }
+
+        }
+    }
+
+
+
+
+
+    &__title {
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 59px;
+
+        color: #000000;
+
+        @media screen and (max-width:768px) {
+
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 25px;
+            line-height: 25px;
+            text-align: center;
+
+            color: #000000;
+        }
+
+    }
+
+    &__text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+
+        color: #000000;
+
+        @media screen and (max-width:768px) {
+
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+
+            color: #000000;
+        }
+
+        /* or 100% */
+
+
+    }
+
+    &__text-area {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (max-width:768px) {
+
+            align-items: center;
+        }
+
+    }
+}
